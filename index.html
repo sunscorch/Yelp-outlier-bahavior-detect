@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Yelp Outlier Detection</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--        <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous">-->
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+        <link href="css/select.css" rel="stylesheet">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash-compat/3.10.1/lodash.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/select.js"></script>
+        <script type="text/javascript" src="js/pie_chart.js"></script>
+        <script type="text/javascript" src="js/box.js"></script>
+        <script type="text/javascript" src="js/process_box.js"></script>
+        
+<style>
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+</style>
+	</head>
+	<body>
+<div id="header" class="navbar navbar-default navbar-fixed-top">
+    <img src="img/logo.png" alt="Yelp logo" style="width:102px;height:50px;">
+    <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="icon-reorder"></i>
+        </button>
+        <a class="navbar-brand" id="title">
+            Yelp Outlier Detection
+        </a>
+    </div>
+   
+</div>
+<div id="wrapper">
+
+ 
+    <div id="main">
+        <div class="page-header">
+        <h3 id="right-title">User Chart</h3>
+            <span id="selNum"></span>
+        </div>
+            <div class="result">    
+            <svg id="viz"></svg>
+<!--                    </div>-->
+            </div>
+    </div>
+                    
+    <div id="comparison"></div>
+    <div id="month"></div> 
+    <div id="star"></div>
+    <div id="friend"></div>
+    <div id="text"></div>
+    <div id="nb"></div>
+    <div id="rpb"></div>
+</div>
+        
+	<!-- script references -->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<!--
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+-->
+<!--		<script src="js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="js/plotly-latest.min.js"></script>
+	</body>
+</html>

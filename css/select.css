@@ -1,0 +1,25 @@
+ circle{
+                fill:purple; /*Set the color of the circle to red */
+                opacity: 0.8; /*Set the opacity of the circle allowing the user to notice circles in the same position */
+            }
+            #tooltip{
+                background-color: white;
+                 border:solid 1px #000;
+                 width: 250px;
+                 display: none;
+                 position: absolute;
+                  }
+            #user_id{
+                font-weight:bold;
+                 display:block;
+             }
+            .brush .extent {
+                  stroke: #fff;
+                  fill-opacity: 0.2;
+                  shape-rendering: crispEdges;
+                  }
+            circle.selected {
+                   fill: green;
+                   fill-opacity: 1;
+                   stroke: brown;
+}
